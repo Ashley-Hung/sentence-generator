@@ -5,7 +5,7 @@
         <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
           class="card-img-top" alt="工程師">
         <div class="card-body mx-auto">
-          <input type="radio" class="form-check-input" id="engineer" name="role" value='engineer'>
+          <input type="radio" class="form-check-input" id="engineer" name="role" value='engineer' {{ifEquals role 'engineer'}}>
           <label class="form-check-label" for="engineer">工程師</label>
         </div>
       </div>
@@ -13,7 +13,7 @@
         <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
           class="card-img-top" alt="設計師">
         <div class="card-body mx-auto">
-          <input type="radio" class="form-check-input" id="designer" name="role" value='designer'>
+          <input type="radio" class="form-check-input" id="designer" name="role" value='designer' {{ifEquals role 'designer'}}>
           <label class="form-check-label" for="designer">設計師</label>
         </div>
       </div>
@@ -21,7 +21,7 @@
         <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
           class="card-img-top" alt="創業家">
         <div class="card-body mx-auto">
-          <input type="radio" class="form-check-input" id="entrepreneur" name="role" value='entrepreneur'>
+          <input type="radio" class="form-check-input" id="entrepreneur" name="role" value='entrepreneur' {{ifEquals role 'entrepreneur'}}>
           <label class="form-check-label" for="entrepreneur">創業家</label>
         </div>
       </div>

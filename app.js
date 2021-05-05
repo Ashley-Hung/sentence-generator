@@ -7,14 +7,21 @@ const app = express()
 const port = 3000
 
 /* Setting view engine */
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
+app.engine(
+  'handlebars',
+  exphbs({
+    defaultLayout: 'main',
+    helpers: {
+      ifEquals: function (role, roleValue) {
+        return role === roleValue ? 'checked' : ''
+      }
+    }
+  })
+)
 app.set('view engine', 'handlebars')
 
 /* Setting static files */
 app.use(express.static('public'))
-app.use(bodyParser.urlencoded({ extended: true }))
-
-/* Setting body-parser */
 app.use(bodyParser.urlencoded({ extended: true }))
 
 /* Route setting */
