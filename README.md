@@ -6,7 +6,7 @@
 
 - 選擇想要的職業別
 - 按下”產生“按鈕來隨機產生幹話
-- 產生幹話後職業別的選擇會保留(開發中)
+- 產生幹話後職業別的選擇會保留(~~開發中~~)
 
 ![demo image](https://github.com/Ashley-Hung/sentence-generator/blob/master/demo.png)
 
